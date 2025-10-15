@@ -1,0 +1,347 @@
+@font-face {
+  font-family: 'BodyFont';
+  src: url('../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HeaderFont';
+  src: url('../../assets/fonts/Bebas/BebasNeue-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#fff, #f1a59c);
+  background-size: 50% 150%;
+  
+}
+
+.orders-link {
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  color: #333;
+  text-decoration: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: #ff4d4d;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 41px;
+  min-width: 18px;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+  font-family: 'BodyFont' , sans-serif;
+}
+
+.tbmHeader {
+  background: #fff0ef;
+  padding: 0;
+  box-shadow: 0 1px 20px 0 #333333;
+}
+
+.dropbtn {
+	background: none;
+	padding: 0;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.dropbtn:hover {
+	transform: scale(1.05);
+}
+
+.dropbtn img {
+	width: 60px;
+	height: 60px;
+	object-fit: contain;
+}
+
+.dropdown {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	display: inline-block;
+	z-index: 1000;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	border-radius: 21px;
+	outline: 3px solid #333;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a {
+	color: #fff;
+	background-color: #ffb131;
+	border-radius: 41px;
+	padding: 5px 30px;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	font-size: 25px;
+	font-family: 'BodyFont' , sans-serif;
+	margin: 10px 30px;
+	width: 150px;
+	transition: 0.5s;
+}
+
+.dropdown-content a:hover {
+	background-color: #da49a7;
+	color: #fff;
+	transform: scale(1.05);
+}
+
+.smalllogo {
+	text-align: center;
+}
+
+.smalllogo img {
+	width: 200px;
+	height: auto;
+	padding: 0;
+	display: inline-block;
+}
+
+.faq-item {
+	margin-bottom: 10px;
+}
+
+.faq-question {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.faq-answer {
+	display: none;
+	margin-left: 15px;
+	background: pink;
+	padding: 5px;
+	border-radius: 8px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  width: 500px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.abtBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px solid #333;
+  font-family: 'BodyFont', sans-serif;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 100px;
+  gap: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  background: #fdfdfd;
+  padding: 20px;
+  border-radius: 20px;
+  width: 240px;
+  margin: 20px 30px 0 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border: 3px solid #333;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.sidebar a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: #ffb131;
+  border-radius: 21px;
+  font-family: 'BodyFont', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333333;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #da49a7;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.tbminfo {
+  flex: 1;
+  font-family: 'BodyFont', sans-serif;
+  color: #333333;
+  font-size: 25px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.tbminfo h1 {
+  font-family: 'HeaderFont', sans-serif;
+  font-size: 100px;
+  margin: 5px auto 0;
+  text-align: center;
+}
+
+@media (max-width: 1470px) {
+  .navbar {
+    padding: 0 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-left a,
+  .nav-right a {
+    font-size: 22px;
+  }
+
+  .logo img {
+    width: 500px;
+  }
+
+  .tbminfo h1 {
+    font-size: 80px;
+  }
+
+  .tbminfo {
+    font-size: 20px;
+  }
+
+  .tbmFooter p {
+    font-size: 15px;
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo img {
+    width: 400px;
+  }
+
+  .nav-left a,
+  .nav-right a {
+    font-size: 20px;
+  }
+
+  .tbminfo h1 {
+    font-size: 70px;
+  }
+
+  .tbminfo {
+    font-size: 18px;
+  }
+
+  .tbmFooter p {
+    font-size: 14px;
+    margin: 0 70px;
+  }
+
+  .abtBox {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .nav-gr {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-left a,
+  .nav-right a {
+    font-size: 18px;
+  }
+
+  .logo img {
+    width: 300px;
+  }
+
+  .tbminfo h1 {
+    font-size: 50px;
+  }
+
+  .tbminfo {
+    font-size: 16px;
+  }
+
+  .tbmFooter p {
+    font-size: 12px;
+    margin: 0 40px;
+  }
+
+  .abtBox {
+    width: 95%;
+    padding: 15px;
+  }
+
+  main {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  .sidebar a {
+    flex: 1 1 45%;
+    min-width: 120px;
+  }
+}

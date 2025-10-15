@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #017EFF;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vh 5vw;
+  min-height: 100vh;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 2vh;
+}
+.logo img {
+  width: 8vw;
+  max-width: 60px;
+  height: auto;
+  border-radius: 12px;
+  vertical-align: middle;
+}
+.logo h1 {
+  display: inline-block;
+  font-size: 5vw;
+  max-font-size: 2rem;
+  margin-left: 2vw;
+  vertical-align: middle;
+}
+.logo p {
+  font-size: 3vw;
+  max-font-size: 1rem;
+  margin-top: 1vh;
+  color: rgba(255,255,255,0.8);
+}
+
+.phone-input {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  margin: 3vh 0;
+}
+.phone-input input {
+  width: 100%;
+  padding: 1.2rem 1rem 1.2rem 3.8rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+.phone-input .prefix {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #555;
+  pointer-events: none;
+}
+
+.mpin-btn {
+  width: 20vw;
+  max-width: 100px;
+  height: 20vw;
+  max-height: 100px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4vh;
+  cursor: pointer;
+  opacity: 0.5;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.mpin-btn.enabled {
+  opacity: 1;
+  pointer-events: auto;
+}
+.mpin-btn .dots {
+  display: grid;
+  grid-template-columns: repeat(3, 2vw);
+  grid-gap: 1.5vw;
+}
+.mpin-btn .dots div {
+  width: 2vw;
+  max-width: 10px;
+  height: 2vw;
+  max-height: 10px;
+  background: #017EFF;
+  border-radius: 50%;
+}
+
+.pin-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 10;
+}
+.pin-container {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+.pin-dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.pin-dots .dot {
+  width: 3.5vw;
+  max-width: 14px;
+  height: 3.5vw;
+  max-height: 14px;
+  border: 2px solid #017EFF;
+  border-radius: 50%;
+  margin: 0 1.5vw;
+}
+.pin-dots .dot.filled {
+  background: #017EFF;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+  margin-bottom: 1rem;
+}
+.keypad button {
+  font-size: 4vw;
+  max-font-size: 1.4rem;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 10px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+.keypad button:active {
+  background: #ddd;
+}
+
+.success-bubble {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  color: #000;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  display: none;
+  z-index: 20;
+  width: 80vw;
+  max-width: 300px;
+}
+.success-bubble h2 {
+  margin-bottom: 1rem;
+}
+.success-bubble p {
+  margin-bottom: 2rem;
+}
+.success-bubble button {
+  padding: 0.7rem 1.5rem;
+  background: #017EFF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+{
+    "username": "shawnie",
+    "password": "$2y$10$dCUW5ZbIUMdJN0S33DflSeY5YNvdm29K31xvPckRfICFr7QYDKcEi",
+    "email": "shawnbraganza184@gmail.com",
+    "wishlist": [],
+    "cart": [
+        {
+            "name": "DAISY BOUQUET",
+            "price": "1350",
+            "imageUrl": "https:\/\/asset.bloomnation.com\/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto\/v1660190201\/vendor\/6167\/catalog\/product\/2\/0\/20220613100522_file_62a7b4a2686c9_62a7b54400d97.jpeg",
+            "quantity": 2
+        }
+    ]
+}
